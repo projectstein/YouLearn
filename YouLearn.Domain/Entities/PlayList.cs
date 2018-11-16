@@ -1,15 +1,14 @@
-﻿using System;
+﻿using YouLearn.Domain.Entities.Base;
+using YouLearn.Domain.Enum;
 
 namespace YouLearn.Domain.Entities
 {
-  public class PlayList
+  public class PlayList : EntityBase
   {
-
-    public Guid Id { get; set; }
     public Usuario Usuario { get; set; }
     //Em analise, Aprovado, ou Recusado
-    public string Status{ get; set; }
+    public EnumStatus Status { get; set; }
   }
 
-  
+
 }
